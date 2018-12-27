@@ -1,0 +1,196 @@
+.section-1 {
+  background-image: url(../img/discography-bg.png);
+  background-position: 50% bottom;
+  background-repeat: no-repeat;
+  background-size: 99.8rem 39.2rem;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .section-1 {
+    background-image: url("../img/discography-bg@2x.png");
+  }
+
+  .composition__item:last-child {
+    padding-bottom: 25.5rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .section-1 {
+    background-image: url("../img/discography-bg@3x.png");
+  }
+
+  .composition__item:last-child {
+    padding-bottom: 155.5rem;
+  }
+}
+
+.section__descr--1 {
+  padding-bottom: 5.5rem;
+}
+
+.composition {
+  @extend %list;
+  padding-top: 4.5rem;
+}
+
+.composition__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.composition__item:last-child {
+  padding-bottom: 22.5rem;
+}
+
+.composition__item--title {
+  font-family: $secondary-font-stack;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 7rem;
+}
+
+.composition__item--subtitle {
+  @include font-stack-section-title;
+  margin-bottom: 2.5rem;
+}
+
+.composition__item--descr {
+  @include font-stack-section-text;
+  margin: 0;
+  margin-bottom: 5rem;
+  text-align: justify;
+}
+
+.composition__item--year {
+  width: 100%;
+  @include border-bottom-title;
+  font-family: $secondary-font-stack;
+  font-size: 1.5rem;
+  color: $secondary-text-color;
+}
+
+.composition__btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: transparent;
+  width: 20rem;
+  height: 5.8rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: $secondary-font-stack;
+  font-size: 1.5rem;
+  color: $third-text-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .3s linear;
+}
+
+.composition__btn:hover {
+  transform: scale(0.96);
+}
+
+.composition__btn--1 {
+  background-image: url("../img/btn-01.jpg");
+  margin-bottom: 5rem;
+  color: $primary-white-color;
+}
+
+.composition__btn--2 {
+  background-image: url("../img/btn-02.jpg");
+  margin-bottom: 4rem;
+}
+
+.composition__btn--3 {
+  background-image: url("../img/btn-03.jpg");
+}
+
+@media (pixel-ratio: 2), (min-resolution: 2dppx) {
+  .composition__btn--1 {
+    background-image: url("../img/btn-01@2x.jpg");
+  }
+
+  .composition__btn--2 {
+    background-image: url("../img/btn-02@2x.jpg");
+  }
+
+  .composition__btn--3 {
+    background-image: url("../img/btn-03@2x.jpg");
+  }
+
+}
+
+@media (pixel-ratio: 3), (min-resolution: 3dppx) {
+  .composition__btn--1 {
+    background-image: url("../img/btn-01@3x.jpg");
+  }
+
+  .composition__btn--2 {
+    background-image: url("../img/btn-02@3x.jpg");
+  }
+
+  .composition__btn--3 {
+    background-image: url("../img/btn-03@3x.jpg");
+  }
+}
+
+@media (min-width: 748px) {
+  .section-1 {
+    background-size: 200rem 78.7rem;
+  }
+
+  .composition__item:last-child{
+    padding-bottom: 45rem;
+  }
+
+  .composition__btn{
+    font-size: $second-font-size;
+  }
+  .composition__btn--1{
+    margin-bottom: 5.5rem;
+  }
+
+  .composition__btn--2{
+    margin-bottom: 4.7rem;
+  }
+
+  .composition__item:not(:last-child){
+    margin-bottom: 14.8rem;
+  }
+}
+
+  @media (min-width: 1200px) {
+
+  .composition__item{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .composition__item:not(:last-child){
+    margin-bottom: 5.7rem;
+  }
+
+  .composition__item--title{
+    margin-bottom: 0;
+  }
+
+  .composition__item--year {
+    width: 90%;
+  }
+  .composition__item--head{
+    flex-basis: 45%;
+  }
+  .composition__item--text{
+    flex-basis: 55%;
+  }
+
+  .composition__btn{
+    margin: 0;
+  }
+}
+
+

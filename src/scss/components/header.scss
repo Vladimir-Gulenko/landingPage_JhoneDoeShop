@@ -1,0 +1,165 @@
+.header{
+  background: url(../img/dj.png) no-repeat;
+  background-size: cover;
+  background-position: 49%;
+  position: relative;
+  min-height: 75rem;
+}
+@media (pixel-ratio: 2),(min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/dj@2x.png");
+  }
+  .button-caler{
+    right: 5rem;
+  }
+
+  .button-caler__ticker:checked ~ .button-caler {
+      right: 16rem;
+    }
+}
+
+@media (pixel-ratio: 3),(min-resolution: 3dppx) {
+  .header {
+    background-image: url("../img/dj@3x.png");
+  }
+}
+
+.logo{
+  height: 39.6rem;
+  padding-top: 15.4rem;
+  display: block;
+}
+
+.logo__img{
+  margin: 0 auto;
+}
+
+.site-navigation__list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 16rem;
+  height: 40rem;
+  background-color: $navigation-background;
+  top: 0;
+  right: -20rem;
+  position: fixed;
+  z-index: 5;
+  opacity: 0;
+  transition: all .3s linear;
+}
+
+
+.button-caler__ticker {
+  display: none;
+}
+
+.button-caler {
+  padding: 0.5rem;
+  position: fixed;
+  top: 2.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  transition: all .3s linear;
+  width: 4.5rem;
+  z-index: 5;
+}
+
+.button-caler__el {
+  display: block;
+  height: 0.5rem;
+  background-color: $button-caler-menu;
+  margin: 0.5rem 0 0;
+  transition: all .3s linear;
+  border-radius: 5px;
+}
+
+.button-caler__el--first {
+  margin-top: 0;
+}
+
+.button-caler__ticker {
+  &:checked ~ .button-caler {
+    right: 17rem;
+  }
+  &:checked ~ .site-navigation__list {
+    right: 0;
+    opacity: 1;
+  }
+  &:checked ~ .button-caler .button-caler__el--first {
+    transform: rotate(45deg);
+  }
+
+  &:checked ~ .button-caler .button-caler__el--second {
+    opacity: 0;
+  }
+
+  &:checked ~ .button-caler .button-caler__el--third {
+    transform: rotate(-45deg);
+  }
+}
+
+  .navigation__link {
+    @extend %link;
+    @include font-stack-nav;
+
+
+    &::after {
+      border-bottom: 2px solid $nav-text-color;
+      content: '';
+      display: block;
+      padding-top: 0.8rem;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all 200ms linear;
+    }
+
+    &:hover,
+    &:focus {
+      color: $third-text-color;
+
+    }
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+
+    .header {
+      background-size: contain;
+      background-position: 51%;
+    }
+
+    .logo {
+      padding-top: 11.4rem;
+    }
+
+    .site-navigation {
+      background: hsla(180,2,90,.6);
+      height: 4rem;
+    }
+
+    .site-navigation__list{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 117rem;
+      height: 4rem;
+      background-color: transparent;
+      margin: 0 auto;
+      position: static;
+      padding: 1rem 0;
+      opacity: 1;
+    }
+
+    .button-caler__ticker,
+    .button-caler {
+      display: none;
+    }
+  }
+

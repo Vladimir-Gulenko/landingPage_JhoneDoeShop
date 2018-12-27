@@ -1,0 +1,252 @@
+.section-5 {
+  margin-bottom: 3.4rem;
+}
+
+.chart-list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-list__item {
+  margin-bottom: 2.7rem;
+  background: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 1.7rem;
+  width: 19.2rem;
+  height: 21rem;
+  position: relative;
+  background-size: cover;
+}
+
+.chart-list li:last-child {
+  margin-bottom: 0;
+}
+
+.card-01 {
+  background-image: url(../img/card-01.jpg);
+}
+
+.card-02 {
+  background-image: url(../img/card-02.jpg);
+}
+
+.card-03 {
+  background-image: url(../img/card-03.jpg);
+}
+
+.card-04 {
+  background-image: url(../img/card-04.jpg);
+}
+
+.card-05 {
+  background-image: url(../img/card-05.jpg);
+}
+
+.card-06 {
+  background-image: url(../img/card-06.jpg);
+}
+
+.chart-list__item--header {
+  margin-bottom: 1.2rem;
+}
+
+.chart-list__item--date {
+  margin: 0 0 0.45rem;
+  font-family: $secondary-font-stack;
+  color: $third-text-color;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+  border-bottom: $third-text-color solid 0.1rem;
+}
+
+.chart-list__item--channel {
+  margin: 0 0 2rem;
+  font-family: $secondary-font-stack;
+  color: $primary-white-color;
+  font-size: 0.937rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.chart-list__item--title {
+  margin: 0;
+  font-family: $secondary-font-stack;
+  color: $third-text-color;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.chart-list__item--descr {
+  margin: 0;
+  font-family: $secondary-font-stack;
+  font-size: $second-font-size;
+  color: $primary-text-color;
+  max-height: 5.5rem;
+  overflow: hidden;
+}
+
+.chart-list__item::after {
+  font-family: $secondary-font-stack;
+  color: $third-text-color;
+  font-size: 5.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0.6rem;
+  bottom: -1.9rem;
+  opacity: 0.2;
+  display: block;
+}
+
+.card-01::after {
+  content: "01";
+}
+
+.card-02::after {
+  content: "02";
+}
+
+.card-03::after {
+  content: "03";
+}
+
+.card-04::after {
+  content: "04";
+}
+
+.card-05::after {
+  content: "05";
+}
+
+.card-06::after {
+  content: "06";
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .card-01 {
+    background-image: url(../img/card-01@2x.jpg);
+  }
+
+  .card-02 {
+    background-image: url(../img/card-02@2x.jpg);
+  }
+
+  .card-03 {
+    background-image: url(../img/card-03@2x.jpg);
+  }
+
+  .card-04 {
+    background-image: url(../img/card-04@2x.jpg);
+  }
+
+  .card-05 {
+    background-image: url(../img/card-05@2x.jpg);
+  }
+
+  .card-06 {
+    background-image: url(../img/card-06@2x.jpg);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .card-01 {
+    background-image: url(../img/card-01@3x.jpg);
+  }
+
+  .card-02 {
+    background-image: url(../img/card-02@3x.jpg);
+  }
+
+  .card-03 {
+    background-image: url(../img/card-03@3x.jpg);
+  }
+
+  .card-04 {
+    background-image: url(../img/card-04@3x.jpg);
+  }
+
+  .card-05 {
+    background-image: url(../img/card-05@3x.jpg);
+  }
+
+  .card-06 {
+    background-image: url(../img/card-06@3x.jpg);
+  }
+}
+
+@media (min-width: 748px) {
+  .section-5 {
+    margin-bottom: 6.8rem;
+  }
+
+  .chart-list__item {
+    margin-bottom: 5rem;
+    padding: 3.5rem;
+    width: 38.4rem;
+    height: 42.2rem;
+  }
+
+  .chart-list__item--header {
+    margin-bottom: 3.4rem;
+  }
+
+  .chart-list__item--date {
+    margin: 0 0 0.9rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .chart-list__item--channel {
+    margin: 0 0 4.8rem;
+    font-size: 1.5rem;
+  }
+
+  .chart-list__item--title {
+    font-size: 2.3rem;
+  }
+
+  .chart-list__item--descr {
+    max-height: 16rem;
+    font-size: 1.5rem;
+  }
+
+  .chart-list__item::after {
+    font-size: 8.2rem;
+    right: 1.2rem;
+    bottom: -3.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-5 {
+    margin-bottom: 12rem;
+  }
+
+  .chart-list {
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .chart-list__item {
+    margin-bottom: 2.8rem;
+  }
+
+  .chart-list__item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+
+  .chart-list__item:not(:nth-child(3n)) {
+    margin-right: 2.4rem;
+  }
+}

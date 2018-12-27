@@ -1,0 +1,59 @@
+.section__header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__title {
+  width: 100%;
+  position: relative;
+  @include font-stack-section-headers;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.section__title:before {
+  @include section-title-decoration;
+}
+
+.section__title--1 {
+  @include gradient-text2;
+  margin: 0 auto;
+}
+
+.section__descr {
+  margin: 0;
+  @include font-stack-section-text;
+  text-align: center;
+}
+
+@media (min-width: 748px){
+  .section__header{
+    width: 64rem;
+  }
+
+  .section__title{
+    font-size: 5.5rem;
+  }
+
+  .section__title--1{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .section__header{
+    width: 75rem;
+  }
+
+  .section__title--1{
+    font-size:  5.5rem;
+    margin: 0 auto;
+    width: 60rem;
+  }
+
+
+  .section__title:before {
+    width: 100%;
+  }
+}

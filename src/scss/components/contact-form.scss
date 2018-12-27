@@ -1,0 +1,130 @@
+.contact__form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.3rem;
+}
+
+@media (min-width: 768px) {
+  .contact__form {
+    align-content: flex-end
+  }
+}
+
+.form__input {
+  margin: 0;
+  width: 18.5rem;
+  height: 1.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  border-bottom: 0.05rem solid rgb(96, 96, 96);
+  @include font-stack-section-text;
+  position: relative;
+  margin-bottom: 1.3rem;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@media (min-width: 748px) {
+  .form__input {
+    width: 38.2rem;
+    height: 3.2rem;
+    border-bottom: 0.2rem solid rgb(96, 96, 96);
+    margin-bottom: 3.2rem;
+    font-size: $third-font-size;
+  }
+}
+
+.form__input:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.form-button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 1.5rem;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(0, 0, 2);
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 5.3rem;
+  height: 1.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-align: left;
+  background-color: transparent;
+  transition: all .3s linear;
+}
+
+.form-button:hover {
+  color: rgb(96, 96, 96);
+  transform: scale(0.95);
+}
+
+@media (min-width: 748px) {
+  .form-button {
+    width: 20rem;
+    font-family: $secondary-font-stack;
+    font-size: 1.7rem;
+    color: $third-text-color;
+    font-weight: 700;
+  }
+}
+
+.registration {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.contact-icons {
+  @extend %list;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border-left: 0.1rem solid rgb(96, 96, 96);
+  margin-left: 3rem;
+  padding-left: 1.3rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 748px) {
+  .contact-icons {
+    border-left: 0.2rem solid rgb(96, 96, 96);
+    margin-left: 10rem;
+    padding-left: 3rem;
+  }
+}
+
+.socials__icons-img {
+  margin: 0;
+  fill: rgb(0, 0, 2);
+  width: 2rem;
+  height: 2rem;
+  transition: fill .3s linear;
+}
+
+.socials__icons-img:hover {
+  fill: rgb(96, 96, 96);
+}
+
+@media (min-width: 748px) {
+  .socials__icons-img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+@media (min-width: 1180px) {
+  .socials__icons-img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

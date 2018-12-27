@@ -1,0 +1,19 @@
+.masthead-wrapper{
+  position: relative;
+  background: url(../img/dj.png) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-bottom: 25rem;
+}
+
+@media (pixel-ratio: 2),(min-resolution: 2dppx) {
+  .masthead-wrapper {
+    background-image: url("../img/dj@2x.png");
+  }
+}
+
+@media (pixel-ratio: 3),(min-resolution: 3dppx) {
+  .masthead-wrapper {
+    background-image: url("../img/dj@3x.png");
+  }
+}

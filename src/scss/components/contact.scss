@@ -1,0 +1,117 @@
+.section-8 {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  padding-top: 4.6rem;
+  padding-bottom: 23rem;
+  background: url("../img/footer-bg.png") no-repeat;
+  background-position: 25% bottom;
+  background-size: 99.8rem 43rem;
+}
+
+.contact-content {
+  width: 26rem;
+  overflow: hidden;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+  .section-8 {
+    background-image: url("../img/footer-bg@2x.png");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-resolution: 3dppx) {
+  .section-8 {
+    background-image: url("../img/footer-bg@3x.png");
+  }
+}
+
+@media (min-width: 748px) {
+  .section-8 {
+    padding-top: 9.2rem;
+    padding-bottom: 45.8rem;
+    background-size: 200rem 86.2rem;
+    background-position: 20% bottom;
+  }
+
+  .section-8 .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .contact-content{
+    display: block;
+    width: 55rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-8 {
+    padding-bottom: 32rem;
+    background-position: 20% bottom;
+  }
+
+  .section-8 .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .contact-content{
+    display: block;
+    width: 55rem;
+  }
+}
+
+.contact-header {
+  margin: 0;
+  margin-bottom: 9.2rem;
+}
+
+.contact-title {
+  @include font-stack-section-headers;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 4rem;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .contact-title {
+    margin: 0;
+  }
+}
+
+.contact-title::before {
+  @include section-title-decoration;
+  width: 25rem;
+}
+
+.contact-address,
+.telephone-link {
+  @extend %link;
+  display: block;
+  margin: 0;
+  word-wrap: break-word;
+  @include font-stack-section-text;
+  width: 20rem;
+  text-align: left;
+}
+
+@media (min-width: 748px) {
+  .contact-address,
+  .telephone-link {
+    width: 41.5rem;
+    font-size: $third-font-size;
+  }
+}
+
+.contact-address {
+  margin-bottom: 2rem;
+}
+
+.contact-telephone {
+  margin: 0;
+}

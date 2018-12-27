@@ -1,0 +1,81 @@
+@mixin font-stack-nav {
+  font-family: $main-font-stack;
+  font-size: $first-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $nav-text-color;
+}
+
+@mixin font-stack-section-headers {
+  font-family: $main-font-stack;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 5.9rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@mixin font-stack-section-text {
+  font-family: $secondary-font-stack;
+  font-weight: 400;
+  font-size: $second-font-size;
+  color: $section-album-description;
+  letter-spacing: 0.015rem;
+  line-height: 1.9rem;
+}
+
+// @mixin font-stack-section-text {
+//   font-family: $secondary-font-stack;
+//   font-weight: 400;
+//   font-size: $second-font-size;
+//   color: $section-album-description;
+//   letter-spacing: 1.5px;
+//   line-height: 24px;
+// }
+
+@mixin font-stack-section-title {
+  font-family: $secondary-font-stack;
+  font-weight: 400;
+  font-size:  23px;
+  line-height: 24px;
+  margin: 0;
+  color: $secondary-text-color;
+}
+
+@mixin border-bottom-title {
+  border-bottom: 1px solid $third-text-color;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  padding: 1rem 0;
+}
+
+@mixin gradient-text($angle: -90deg, $color1: #62a2ad, $color2: #8dbab3) {
+  color: $color1;
+  background: -webkit-linear-gradient($angle, $color1, $color2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+
+@mixin gradient-text2($angle: -45deg, $color1: #876447, $color2: #6d5356) {
+  color: $color1;
+  background: -webkit-linear-gradient($angle, $color1, $color2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+
+
+@mixin section-title-decoration {
+  position: absolute;
+  content: "";
+  margin: 0;
+  padding: 0;
+  background-color: rgb(96, 96, 96);
+  left: 0;
+  top: 50%;
+  height: 0.1rem;
+  width: 100%;
+}
